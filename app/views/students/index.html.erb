@@ -31,11 +31,12 @@
         </th>
       </tr>
 
-      <% list_of_students.each do |student| %>
+      <% @list_of_students.each do |student| %>
       <tr>
         <td>
           <%= student.id %>
         </td>
+
 
         <td>
           <%= student.first_name %>

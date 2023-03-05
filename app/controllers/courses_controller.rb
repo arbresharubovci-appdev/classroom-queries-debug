@@ -16,3 +16,4 @@ class CoursesController < ApplicationController
     render({ :template => "courses/show.html.erb" })
   end
 end
+

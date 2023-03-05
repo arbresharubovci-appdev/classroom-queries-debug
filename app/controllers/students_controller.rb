@@ -12,10 +12,11 @@ class StudentsController < ApplicationController
 
     #"path_id"=>":path_id"}
     
-    matching_students = Enrollment.where({ :id => the_id })
+    matching_students = Student.where({ :id => the_id })
 
     @the_student = matching_students.at(0)
 
     render({ :template => "students/show.html.erb" })
   end
 end
+
